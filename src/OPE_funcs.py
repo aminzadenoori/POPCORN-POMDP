@@ -9,7 +9,7 @@ import autograd.numpy as np
 from autograd import grad
 from autograd import value_and_grad as vg
 from autograd import make_vjp
-from autograd.scipy.misc import logsumexp
+from autograd.scipy.special import logsumexp
 from autograd.misc.flatten import flatten_func,flatten
 import autograd.scipy.stats as stat
 
@@ -23,7 +23,7 @@ def softmax_policy_value_objective_term(nat_params,R,V,B,
     init_actions,observs,init_observs,
     observs_missing_mask,init_observs_missing_mask,
     rewards,seq_lens,gamma,
-    gr_safety_thresh=0,
+    gr_safety_thresh,
     cached_beliefs=None,update_V=False,
     alpha_temp=0.01,PBVI_temps=[0.01,0.01,0.01],
     PBVI_update_iters=1,

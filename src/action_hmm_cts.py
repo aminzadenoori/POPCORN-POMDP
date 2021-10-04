@@ -17,7 +17,7 @@ import autograd
 import autograd.numpy as np
 from autograd import grad
 from autograd import value_and_grad as vg
-from autograd.scipy.misc import logsumexp
+from autograd.scipy.special import logsumexp
 from autograd.misc.flatten import flatten_func
 import autograd.scipy.stats as stat
 
@@ -151,6 +151,7 @@ def HMM_marginal_likelihood(nat_params,observs,actions,init_observs=None,
 
     return -obj
 
+# What is this MAP objective?
 def MAP_objective(nat_params,observs,actions,
     init_observs=None,init_actions=None,
     observs_missing_mask=None,init_observs_missing_mask=None):

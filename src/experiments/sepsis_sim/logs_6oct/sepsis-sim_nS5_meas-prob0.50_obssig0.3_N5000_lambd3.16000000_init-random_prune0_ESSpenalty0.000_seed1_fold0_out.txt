@@ -1,0 +1,989 @@
+starting job_id 0
+sepsis-sim_nS5_meas-prob0.50_obssig0.3_N5000_lambd3.16000000_init-random_prune0_ESSpenalty0.000_seed1_fold0
+optimal policy value: 0.367
+eps greedy policy value: 0.133
+learning policy for restart 0
+took 20.46
+learning policy for restart 1
+took 3.36
+learning policy for restart 2
+took 3.29
+learning policy for restart 3
+took 3.47
+learning policy for restart 4
+took 16.50
+learning policy for restart 5
+took 3.29
+learning policy for restart 6
+took 3.27
+learning policy for restart 7
+took 3.31
+learning policy for restart 8
+took 3.26
+learning policy for restart 9
+took 17.18
+learning policy for restart 10
+took 3.28
+learning policy for restart 11
+took 3.28
+learning policy for restart 12
+took 3.28
+learning policy for restart 13
+took 3.30
+learning policy for restart 14
+took 3.28
+learning policy for restart 15
+took 3.59
+learning policy for restart 16
+took 3.54
+learning policy for restart 17
+took 3.27
+learning policy for restart 18
+took 3.30
+learning policy for restart 19
+took 3.27
+learning policy for restart 20
+took 3.27
+learning policy for restart 21
+took 3.29
+learning policy for restart 22
+took 3.27
+learning policy for restart 23
+took 3.22
+learning policy for restart 24
+took 3.28
+learning policy for restart 25
+took 3.29
+learning policy for restart 26
+took 3.28
+learning policy for restart 27
+took 3.28
+learning policy for restart 28
+took 3.33
+learning policy for restart 29
+took 3.35
+learning policy for restart 30
+took 3.24
+learning policy for restart 31
+took 3.28
+learning policy for restart 32
+took 3.26
+learning policy for restart 33
+took 3.34
+learning policy for restart 34
+took 3.28
+learning policy for restart 35
+took 3.53
+learning policy for restart 36
+took 3.45
+learning policy for restart 37
+took 3.27
+learning policy for restart 38
+took 3.31
+learning policy for restart 39
+took 3.30
+learning policy for restart 40
+took 3.28
+learning policy for restart 41
+took 3.28
+learning policy for restart 42
+took 3.29
+learning policy for restart 43
+took 3.38
+learning policy for restart 44
+took 3.26
+learning policy for restart 45
+took 3.35
+learning policy for restart 46
+took 3.24
+learning policy for restart 47
+took 3.31
+learning policy for restart 48
+took 3.28
+learning policy for restart 49
+took 3.28
+starting epoch 0
+epoch 0, iter 1, RL obj 24.6612, HMM obj 1.8635, total obj 26.5247 grad L1-norm 5.4301, took 1.79
+HMM loglik on test data -1.8761, grad norm 1.9180
+iter 1, est value of policy on test data: -0.08301
+testing deterministic policy via rollouts...
+Avg test return: -0.6033
+quantiles:
+[-1.         -1.         -1.         -0.970299   -0.91351725  0.
+  0.95099005  0.99        1.        ]
+saving!
+starting epoch 1
+epoch 1, iter 2, RL obj 24.6572, HMM obj 1.8620, total obj 26.5192 grad L1-norm 5.6894, took 1.95
+starting epoch 2
+epoch 2, iter 3, RL obj 24.6521, HMM obj 1.8601, total obj 26.5122 grad L1-norm 5.8609, took 1.92
+starting epoch 3
+epoch 3, iter 4, RL obj 24.6458, HMM obj 1.8580, total obj 26.5038 grad L1-norm 5.8353, took 1.84
+starting epoch 4
+epoch 4, iter 5, RL obj 24.6385, HMM obj 1.8555, total obj 26.4940 grad L1-norm 5.5224, took 1.79
+starting epoch 5
+epoch 5, iter 6, RL obj 24.6307, HMM obj 1.8525, total obj 26.4832 grad L1-norm 4.9106, took 1.76
+starting epoch 6
+epoch 6, iter 7, RL obj 24.6231, HMM obj 1.8490, total obj 26.4721 grad L1-norm 4.1320, took 1.77
+starting epoch 7
+epoch 7, iter 8, RL obj 24.6164, HMM obj 1.8448, total obj 26.4612 grad L1-norm 3.3669, took 1.76
+starting epoch 8
+epoch 8, iter 9, RL obj 24.6108, HMM obj 1.8397, total obj 26.4505 grad L1-norm 2.8111, took 1.87
+starting epoch 9
+epoch 9, iter 10, RL obj 24.6062, HMM obj 1.8337, total obj 26.4398 grad L1-norm 2.5067, took 1.79
+starting epoch 10
+epoch 10, iter 11, RL obj 24.6015, HMM obj 1.8265, total obj 26.4280 grad L1-norm 2.4975, took 1.75
+starting epoch 11
+epoch 11, iter 12, RL obj 24.5964, HMM obj 1.8180, total obj 26.4144 grad L1-norm 2.3216, took 1.71
+starting epoch 12
+epoch 12, iter 13, RL obj 24.5916, HMM obj 1.8081, total obj 26.3997 grad L1-norm 2.1227, took 1.75
+starting epoch 13
+epoch 13, iter 14, RL obj 24.5877, HMM obj 1.7963, total obj 26.3841 grad L1-norm 1.9081, took 1.75
+starting epoch 14
+epoch 14, iter 15, RL obj 24.5847, HMM obj 1.7821, total obj 26.3668 grad L1-norm 1.9223, took 1.72
+starting epoch 15
+epoch 15, iter 16, RL obj 24.5817, HMM obj 1.7647, total obj 26.3465 grad L1-norm 1.8676, took 1.72
+starting epoch 16
+epoch 16, iter 17, RL obj 24.5787, HMM obj 1.7444, total obj 26.3231 grad L1-norm 1.8063, took 1.77
+starting epoch 17
+epoch 17, iter 18, RL obj 24.5755, HMM obj 1.7209, total obj 26.2964 grad L1-norm 1.7966, took 1.75
+starting epoch 18
+epoch 18, iter 19, RL obj 24.5669, HMM obj 1.6948, total obj 26.2618 grad L1-norm 3.4059, took 1.72
+starting epoch 19
+epoch 19, iter 20, RL obj 24.5801, HMM obj 1.6642, total obj 26.2443 grad L1-norm 1.2183, took 1.75
+starting epoch 20
+epoch 20, iter 21, RL obj 24.5786, HMM obj 1.6333, total obj 26.2119 grad L1-norm 4.3687, took 1.71
+starting epoch 21
+epoch 21, iter 22, RL obj 24.5592, HMM obj 1.6002, total obj 26.1594 grad L1-norm 3.2365, took 1.72
+starting epoch 22
+epoch 22, iter 23, RL obj 24.5648, HMM obj 1.5633, total obj 26.1281 grad L1-norm 1.0012, took 1.77
+starting epoch 23
+epoch 23, iter 24, RL obj 24.5631, HMM obj 1.5198, total obj 26.0829 grad L1-norm 3.8419, took 1.72
+starting epoch 24
+epoch 24, iter 25, RL obj 24.5503, HMM obj 1.4710, total obj 26.0213 grad L1-norm 3.9177, took 1.72
+starting epoch 25
+epoch 25, iter 26, RL obj 24.5414, HMM obj 1.4189, total obj 25.9603 grad L1-norm 1.0603, took 1.77
+starting epoch 26
+epoch 26, iter 27, RL obj 24.5219, HMM obj 1.3674, total obj 25.8893 grad L1-norm 5.1422, took 1.73
+starting epoch 27
+epoch 27, iter 28, RL obj 24.4802, HMM obj 1.3217, total obj 25.8019 grad L1-norm 2.7916, took 1.72
+starting epoch 28
+epoch 28, iter 29, RL obj 24.1452, HMM obj 1.2883, total obj 25.4335 grad L1-norm 10.5267, took 1.75
+starting epoch 29
+epoch 29, iter 30, RL obj 23.7949, HMM obj 1.2541, total obj 25.0490 grad L1-norm 51.0316, took 1.73
+starting epoch 30
+epoch 30, iter 31, RL obj 24.2218, HMM obj 1.2216, total obj 25.4433 grad L1-norm 7.6656, took 1.73
+starting epoch 31
+epoch 31, iter 32, RL obj 23.6503, HMM obj 1.1898, total obj 24.8402 grad L1-norm 19.2370, took 1.82
+starting epoch 32
+epoch 32, iter 33, RL obj 23.5657, HMM obj 1.1620, total obj 24.7277 grad L1-norm 2.0507, took 1.71
+starting epoch 33
+epoch 33, iter 34, RL obj 23.5605, HMM obj 1.1328, total obj 24.6933 grad L1-norm 1.5505, took 1.73
+starting epoch 34
+epoch 34, iter 35, RL obj 23.5495, HMM obj 1.1042, total obj 24.6537 grad L1-norm 3.8380, took 1.78
+starting epoch 35
+epoch 35, iter 36, RL obj 23.5285, HMM obj 1.0800, total obj 24.6086 grad L1-norm 1.1105, took 1.71
+starting epoch 36
+epoch 36, iter 37, RL obj 23.5065, HMM obj 1.0565, total obj 24.5630 grad L1-norm 3.6782, took 1.74
+starting epoch 37
+epoch 37, iter 38, RL obj 23.4810, HMM obj 1.0349, total obj 24.5159 grad L1-norm 3.5720, took 1.78
+starting epoch 38
+epoch 38, iter 39, RL obj 23.7268, HMM obj 1.0163, total obj 24.7431 grad L1-norm 10.8263, took 1.78
+starting epoch 39
+epoch 39, iter 40, RL obj 23.4628, HMM obj 1.0050, total obj 24.4678 grad L1-norm 3.5715, took 1.94
+starting epoch 40
+epoch 40, iter 41, RL obj 23.4505, HMM obj 0.9912, total obj 24.4417 grad L1-norm 3.0816, took 1.86
+starting epoch 41
+epoch 41, iter 42, RL obj 23.4424, HMM obj 0.9782, total obj 24.4206 grad L1-norm 2.7596, took 1.78
+starting epoch 42
+epoch 42, iter 43, RL obj 23.4356, HMM obj 0.9666, total obj 24.4022 grad L1-norm 2.5611, took 1.73
+starting epoch 43
+epoch 43, iter 44, RL obj 23.4263, HMM obj 0.9571, total obj 24.3834 grad L1-norm 2.4481, took 1.77
+starting epoch 44
+epoch 44, iter 45, RL obj 23.4183, HMM obj 0.9486, total obj 24.3669 grad L1-norm 2.6626, took 1.74
+starting epoch 45
+epoch 45, iter 46, RL obj 23.4077, HMM obj 0.9410, total obj 24.3487 grad L1-norm 2.4963, took 1.75
+starting epoch 46
+epoch 46, iter 47, RL obj 23.3979, HMM obj 0.9350, total obj 24.3329 grad L1-norm 2.4891, took 1.79
+starting epoch 47
+epoch 47, iter 48, RL obj 23.3771, HMM obj 0.9303, total obj 24.3074 grad L1-norm 2.3697, took 1.74
+starting epoch 48
+epoch 48, iter 49, RL obj 23.3373, HMM obj 0.9263, total obj 24.2635 grad L1-norm 2.2238, took 1.74
+starting epoch 49
+epoch 49, iter 50, RL obj 23.2843, HMM obj 0.9217, total obj 24.2061 grad L1-norm 6.0832, took 1.80
+starting epoch 50
+epoch 50, iter 51, RL obj 23.1214, HMM obj 0.9181, total obj 24.0395 grad L1-norm 3.9963, took 1.76
+HMM loglik on test data -0.9258, grad norm 0.6318
+iter 51, est value of policy on test data: -0.19785
+testing deterministic policy via rollouts...
+Avg test return: -0.5640
+quantiles:
+[-1.         -1.         -0.99       -0.96059601 -0.89533825  0.
+  0.91351725  0.99        1.        ]
+saving!
+starting epoch 51
+epoch 51, iter 52, RL obj 23.1018, HMM obj 0.9166, total obj 24.0184 grad L1-norm 1.8387, took 1.76
+starting epoch 52
+epoch 52, iter 53, RL obj 23.1142, HMM obj 0.9144, total obj 24.0286 grad L1-norm 4.4196, took 1.76
+starting epoch 53
+epoch 53, iter 54, RL obj 23.1269, HMM obj 0.9126, total obj 24.0396 grad L1-norm 7.2436, took 1.86
+starting epoch 54
+epoch 54, iter 55, RL obj 23.0843, HMM obj 0.9110, total obj 23.9953 grad L1-norm 1.9656, took 2.06
+starting epoch 55
+epoch 55, iter 56, RL obj 23.2039, HMM obj 0.9094, total obj 24.1133 grad L1-norm 3.3900, took 2.31
+starting epoch 56
+epoch 56, iter 57, RL obj 23.0734, HMM obj 0.9073, total obj 23.9807 grad L1-norm 1.6406, took 1.87
+starting epoch 57
+epoch 57, iter 58, RL obj 23.0967, HMM obj 0.9056, total obj 24.0023 grad L1-norm 2.7525, took 2.04
+starting epoch 58
+epoch 58, iter 59, RL obj 23.0533, HMM obj 0.9034, total obj 23.9567 grad L1-norm 1.2531, took 2.15
+starting epoch 59
+epoch 59, iter 60, RL obj 23.0440, HMM obj 0.9023, total obj 23.9463 grad L1-norm 2.4664, took 1.88
+starting epoch 60
+epoch 60, iter 61, RL obj 23.0325, HMM obj 0.9019, total obj 23.9344 grad L1-norm 1.6439, took 2.09
+starting epoch 61
+epoch 61, iter 62, RL obj 23.0364, HMM obj 0.9015, total obj 23.9379 grad L1-norm 1.3652, took 2.06
+starting epoch 62
+epoch 62, iter 63, RL obj 23.0161, HMM obj 0.8995, total obj 23.9156 grad L1-norm 1.5162, took 1.77
+starting epoch 63
+epoch 63, iter 64, RL obj 22.7133, HMM obj 0.8981, total obj 23.6114 grad L1-norm 10.7844, took 1.77
+starting epoch 64
+epoch 64, iter 65, RL obj 22.6863, HMM obj 0.8981, total obj 23.5845 grad L1-norm 12.4030, took 1.91
+starting epoch 65
+epoch 65, iter 66, RL obj 22.6747, HMM obj 0.8971, total obj 23.5719 grad L1-norm 1.6913, took 1.84
+starting epoch 66
+epoch 66, iter 67, RL obj 22.6659, HMM obj 0.8958, total obj 23.5617 grad L1-norm 1.6373, took 1.80
+starting epoch 67
+epoch 67, iter 68, RL obj 22.6621, HMM obj 0.8949, total obj 23.5570 grad L1-norm 0.9666, took 1.75
+starting epoch 68
+epoch 68, iter 69, RL obj 22.6555, HMM obj 0.8942, total obj 23.5498 grad L1-norm 12.0562, took 1.74
+starting epoch 69
+epoch 69, iter 70, RL obj 22.6490, HMM obj 0.8938, total obj 23.5428 grad L1-norm 13.0659, took 1.76
+starting epoch 70
+epoch 70, iter 71, RL obj 22.6447, HMM obj 0.8921, total obj 23.5368 grad L1-norm 2.0439, took 1.76
+starting epoch 71
+epoch 71, iter 72, RL obj 22.6423, HMM obj 0.8899, total obj 23.5322 grad L1-norm 2.7991, took 1.76
+starting epoch 72
+epoch 72, iter 73, RL obj 22.6387, HMM obj 0.8885, total obj 23.5272 grad L1-norm 2.3531, took 1.73
+starting epoch 73
+epoch 73, iter 74, RL obj 22.6350, HMM obj 0.8870, total obj 23.5220 grad L1-norm 1.2623, took 1.76
+starting epoch 74
+epoch 74, iter 75, RL obj 22.6294, HMM obj 0.8851, total obj 23.5145 grad L1-norm 12.2706, took 1.73
+starting epoch 75
+epoch 75, iter 76, RL obj 22.6241, HMM obj 0.8828, total obj 23.5069 grad L1-norm 1.1574, took 1.79
+starting epoch 76
+epoch 76, iter 77, RL obj 22.6197, HMM obj 0.8807, total obj 23.5004 grad L1-norm 1.7994, took 1.96
+starting epoch 77
+epoch 77, iter 78, RL obj 22.6161, HMM obj 0.8785, total obj 23.4946 grad L1-norm 1.7603, took 1.97
+starting epoch 78
+epoch 78, iter 79, RL obj 22.6126, HMM obj 0.8766, total obj 23.4892 grad L1-norm 1.8559, took 2.03
+starting epoch 79
+epoch 79, iter 80, RL obj 22.6080, HMM obj 0.8741, total obj 23.4822 grad L1-norm 0.9100, took 2.34
+starting epoch 80
+epoch 80, iter 81, RL obj 22.6012, HMM obj 0.8719, total obj 23.4731 grad L1-norm 1.8295, took 1.76
+starting epoch 81
+epoch 81, iter 82, RL obj 22.6260, HMM obj 0.8691, total obj 23.4951 grad L1-norm 2.9553, took 1.77
+starting epoch 82
+epoch 82, iter 83, RL obj 22.5952, HMM obj 0.8689, total obj 23.4641 grad L1-norm 1.9243, took 1.94
+starting epoch 83
+epoch 83, iter 84, RL obj 22.5927, HMM obj 0.8665, total obj 23.4592 grad L1-norm 2.3972, took 1.86
+starting epoch 84
+epoch 84, iter 85, RL obj 22.5945, HMM obj 0.8646, total obj 23.4591 grad L1-norm 1.3843, took 1.74
+starting epoch 85
+epoch 85, iter 86, RL obj 22.5897, HMM obj 0.8631, total obj 23.4528 grad L1-norm 11.7294, took 2.08
+starting epoch 86
+epoch 86, iter 87, RL obj 22.5892, HMM obj 0.8617, total obj 23.4509 grad L1-norm 0.5085, took 1.81
+starting epoch 87
+epoch 87, iter 88, RL obj 22.5887, HMM obj 0.8597, total obj 23.4484 grad L1-norm 2.0614, took 2.03
+starting epoch 88
+epoch 88, iter 89, RL obj 22.5858, HMM obj 0.8578, total obj 23.4436 grad L1-norm 1.9047, took 2.06
+starting epoch 89
+epoch 89, iter 90, RL obj 22.5825, HMM obj 0.8559, total obj 23.4384 grad L1-norm 2.1262, took 2.07
+starting epoch 90
+epoch 90, iter 91, RL obj 22.5766, HMM obj 0.8546, total obj 23.4312 grad L1-norm 0.8468, took 1.84
+starting epoch 91
+epoch 91, iter 92, RL obj 22.5760, HMM obj 0.8535, total obj 23.4295 grad L1-norm 11.6019, took 2.11
+starting epoch 92
+epoch 92, iter 93, RL obj 22.5708, HMM obj 0.8525, total obj 23.4233 grad L1-norm 11.5146, took 1.82
+starting epoch 93
+epoch 93, iter 94, RL obj 22.5676, HMM obj 0.8514, total obj 23.4190 grad L1-norm 11.3888, took 2.02
+starting epoch 94
+epoch 94, iter 95, RL obj 22.5647, HMM obj 0.8505, total obj 23.4152 grad L1-norm 11.5179, took 2.25
+starting epoch 95
+epoch 95, iter 96, RL obj 22.5620, HMM obj 0.8490, total obj 23.4110 grad L1-norm 0.8335, took 2.04
+starting epoch 96
+epoch 96, iter 97, RL obj 22.5594, HMM obj 0.8469, total obj 23.4063 grad L1-norm 1.7967, took 2.06
+starting epoch 97
+epoch 97, iter 98, RL obj 22.5566, HMM obj 0.8448, total obj 23.4014 grad L1-norm 1.8077, took 2.21
+starting epoch 98
+epoch 98, iter 99, RL obj 22.5535, HMM obj 0.8426, total obj 23.3961 grad L1-norm 0.8163, took 2.11
+starting epoch 99
+epoch 99, iter 100, RL obj 22.5458, HMM obj 0.8405, total obj 23.3863 grad L1-norm 11.4760, took 2.06
+starting epoch 100
+epoch 100, iter 101, RL obj 22.5177, HMM obj 0.8393, total obj 23.3569 grad L1-norm 12.2335, took 2.27
+HMM loglik on test data -0.8498, grad norm 0.5637
+iter 101, est value of policy on test data: -0.12885
+testing deterministic policy via rollouts...
+Avg test return: -0.5510
+quantiles:
+[-1.         -1.         -0.99       -0.96059601 -0.89533825  0.
+  0.94148015  0.99        1.        ]
+saving!
+starting epoch 101
+epoch 101, iter 102, RL obj 22.3575, HMM obj 0.8385, total obj 23.1960 grad L1-norm 11.4331, took 2.11
+starting epoch 102
+epoch 102, iter 103, RL obj 22.2930, HMM obj 0.8383, total obj 23.1314 grad L1-norm 5.5000, took 1.88
+starting epoch 103
+epoch 103, iter 104, RL obj 22.2766, HMM obj 0.8376, total obj 23.1142 grad L1-norm 3.8842, took 1.87
+starting epoch 104
+epoch 104, iter 105, RL obj 22.2842, HMM obj 0.8370, total obj 23.1212 grad L1-norm 6.1702, took 1.84
+starting epoch 105
+epoch 105, iter 106, RL obj 22.2748, HMM obj 0.8367, total obj 23.1114 grad L1-norm 7.3704, took 1.88
+starting epoch 106
+epoch 106, iter 107, RL obj 22.2250, HMM obj 0.8361, total obj 23.0612 grad L1-norm 2.0617, took 1.95
+starting epoch 107
+epoch 107, iter 108, RL obj 22.2173, HMM obj 0.8356, total obj 23.0529 grad L1-norm 10.2219, took 1.94
+starting epoch 108
+epoch 108, iter 109, RL obj 22.2141, HMM obj 0.8350, total obj 23.0490 grad L1-norm 10.2062, took 1.83
+starting epoch 109
+epoch 109, iter 110, RL obj 22.2131, HMM obj 0.8345, total obj 23.0476 grad L1-norm 10.2575, took 1.89
+starting epoch 110
+epoch 110, iter 111, RL obj 22.2067, HMM obj 0.8337, total obj 23.0405 grad L1-norm 10.4003, took 1.80
+starting epoch 111
+epoch 111, iter 112, RL obj 22.2012, HMM obj 0.8330, total obj 23.0342 grad L1-norm 10.2995, took 2.21
+starting epoch 112
+epoch 112, iter 113, RL obj 22.1964, HMM obj 0.8323, total obj 23.0287 grad L1-norm 9.7953, took 2.13
+starting epoch 113
+epoch 113, iter 114, RL obj 22.1912, HMM obj 0.8313, total obj 23.0225 grad L1-norm 10.3144, took 1.92
+starting epoch 114
+epoch 114, iter 115, RL obj 22.1852, HMM obj 0.8303, total obj 23.0155 grad L1-norm 1.3205, took 2.00
+starting epoch 115
+epoch 115, iter 116, RL obj 22.1764, HMM obj 0.8292, total obj 23.0056 grad L1-norm 3.2669, took 1.99
+starting epoch 116
+epoch 116, iter 117, RL obj 22.1661, HMM obj 0.8276, total obj 22.9937 grad L1-norm 1.2929, took 1.87
+starting epoch 117
+epoch 117, iter 118, RL obj 22.1582, HMM obj 0.8258, total obj 22.9840 grad L1-norm 9.5904, took 1.90
+starting epoch 118
+epoch 118, iter 119, RL obj 22.1513, HMM obj 0.8240, total obj 22.9754 grad L1-norm 10.6025, took 1.84
+starting epoch 119
+epoch 119, iter 120, RL obj 22.1427, HMM obj 0.8236, total obj 22.9664 grad L1-norm 10.3171, took 2.06
+starting epoch 120
+epoch 120, iter 121, RL obj 22.1330, HMM obj 0.8230, total obj 22.9560 grad L1-norm 9.3802, took 2.10
+starting epoch 121
+epoch 121, iter 122, RL obj 22.1265, HMM obj 0.8221, total obj 22.9485 grad L1-norm 10.0838, took 2.17
+starting epoch 122
+epoch 122, iter 123, RL obj 22.1193, HMM obj 0.8210, total obj 22.9403 grad L1-norm 10.3829, took 2.10
+starting epoch 123
+epoch 123, iter 124, RL obj 22.1101, HMM obj 0.8210, total obj 22.9311 grad L1-norm 10.2183, took 2.41
+starting epoch 124
+epoch 124, iter 125, RL obj 22.1006, HMM obj 0.8203, total obj 22.9209 grad L1-norm 11.1357, took 2.09
+starting epoch 125
+epoch 125, iter 126, RL obj 22.0795, HMM obj 0.8204, total obj 22.9000 grad L1-norm 13.3706, took 2.17
+starting epoch 126
+epoch 126, iter 127, RL obj 22.0559, HMM obj 0.8207, total obj 22.8767 grad L1-norm 11.8342, took 2.03
+starting epoch 127
+epoch 127, iter 128, RL obj 22.0430, HMM obj 0.8211, total obj 22.8641 grad L1-norm 10.8489, took 2.13
+starting epoch 128
+epoch 128, iter 129, RL obj 22.0359, HMM obj 0.8219, total obj 22.8578 grad L1-norm 11.1249, took 2.12
+starting epoch 129
+epoch 129, iter 130, RL obj 22.0166, HMM obj 0.8220, total obj 22.8386 grad L1-norm 10.4403, took 1.80
+starting epoch 130
+epoch 130, iter 131, RL obj 21.9835, HMM obj 0.8219, total obj 22.8055 grad L1-norm 4.0393, took 1.88
+starting epoch 131
+epoch 131, iter 132, RL obj 21.9002, HMM obj 0.8226, total obj 22.7228 grad L1-norm 9.1773, took 1.98
+starting epoch 132
+epoch 132, iter 133, RL obj 21.8716, HMM obj 0.8238, total obj 22.6954 grad L1-norm 1.7656, took 2.13
+starting epoch 133
+epoch 133, iter 134, RL obj 21.8653, HMM obj 0.8239, total obj 22.6892 grad L1-norm 5.8990, took 2.13
+starting epoch 134
+epoch 134, iter 135, RL obj 21.8546, HMM obj 0.8234, total obj 22.6781 grad L1-norm 1.1612, took 2.01
+starting epoch 135
+epoch 135, iter 136, RL obj 21.8528, HMM obj 0.8239, total obj 22.6767 grad L1-norm 4.0605, took 2.16
+starting epoch 136
+epoch 136, iter 137, RL obj 21.8428, HMM obj 0.8243, total obj 22.6671 grad L1-norm 2.5158, took 1.86
+starting epoch 137
+epoch 137, iter 138, RL obj 21.8377, HMM obj 0.8240, total obj 22.6617 grad L1-norm 1.6234, took 2.16
+starting epoch 138
+epoch 138, iter 139, RL obj 21.8340, HMM obj 0.8239, total obj 22.6579 grad L1-norm 2.6495, took 1.90
+starting epoch 139
+epoch 139, iter 140, RL obj 21.8295, HMM obj 0.8240, total obj 22.6535 grad L1-norm 1.7453, took 1.74
+starting epoch 140
+epoch 140, iter 141, RL obj 21.8252, HMM obj 0.8243, total obj 22.6495 grad L1-norm 1.6649, took 1.86
+starting epoch 141
+epoch 141, iter 142, RL obj 21.8208, HMM obj 0.8247, total obj 22.6455 grad L1-norm 2.1017, took 1.75
+starting epoch 142
+epoch 142, iter 143, RL obj 21.8166, HMM obj 0.8249, total obj 22.6415 grad L1-norm 2.8063, took 1.75
+starting epoch 143
+epoch 143, iter 144, RL obj 21.8123, HMM obj 0.8254, total obj 22.6377 grad L1-norm 3.5473, took 1.78
+starting epoch 144
+epoch 144, iter 145, RL obj 21.8085, HMM obj 0.8260, total obj 22.6345 grad L1-norm 4.8999, took 1.81
+starting epoch 145
+epoch 145, iter 146, RL obj 21.8039, HMM obj 0.8263, total obj 22.6303 grad L1-norm 3.3583, took 1.78
+starting epoch 146
+epoch 146, iter 147, RL obj 21.8000, HMM obj 0.8263, total obj 22.6263 grad L1-norm 3.5300, took 2.00
+starting epoch 147
+epoch 147, iter 148, RL obj 21.7960, HMM obj 0.8266, total obj 22.6227 grad L1-norm 2.1162, took 1.76
+starting epoch 148
+epoch 148, iter 149, RL obj 21.7925, HMM obj 0.8269, total obj 22.6194 grad L1-norm 1.7421, took 1.71
+starting epoch 149
+epoch 149, iter 150, RL obj 21.7889, HMM obj 0.8272, total obj 22.6161 grad L1-norm 1.5268, took 1.76
+starting epoch 150
+epoch 150, iter 151, RL obj 21.7855, HMM obj 0.8277, total obj 22.6132 grad L1-norm 1.3471, took 1.74
+HMM loglik on test data -0.8404, grad norm 0.5673
+iter 151, est value of policy on test data: -0.05752
+testing deterministic policy via rollouts...
+Avg test return: -0.5260
+quantiles:
+[-1.         -1.         -0.99       -0.96059601 -0.88638487  0.
+  0.95099005  0.99        1.        ]
+saving!
+starting epoch 151
+epoch 151, iter 152, RL obj 21.7823, HMM obj 0.8279, total obj 22.6102 grad L1-norm 1.0990, took 1.77
+starting epoch 152
+epoch 152, iter 153, RL obj 21.7793, HMM obj 0.8282, total obj 22.6075 grad L1-norm 1.0329, took 1.75
+starting epoch 153
+epoch 153, iter 154, RL obj 21.7767, HMM obj 0.8286, total obj 22.6053 grad L1-norm 1.2110, took 1.71
+starting epoch 154
+epoch 154, iter 155, RL obj 21.7744, HMM obj 0.8288, total obj 22.6032 grad L1-norm 1.4490, took 1.75
+starting epoch 155
+epoch 155, iter 156, RL obj 21.7726, HMM obj 0.8293, total obj 22.6018 grad L1-norm 1.1392, took 1.77
+starting epoch 156
+epoch 156, iter 157, RL obj 21.7710, HMM obj 0.8292, total obj 22.6002 grad L1-norm 0.9975, took 1.73
+starting epoch 157
+epoch 157, iter 158, RL obj 21.7692, HMM obj 0.8295, total obj 22.5987 grad L1-norm 0.9537, took 1.70
+starting epoch 158
+epoch 158, iter 159, RL obj 21.7670, HMM obj 0.8300, total obj 22.5970 grad L1-norm 1.0287, took 1.75
+starting epoch 159
+epoch 159, iter 160, RL obj 21.7670, HMM obj 0.8302, total obj 22.5972 grad L1-norm 1.4687, took 1.71
+starting epoch 160
+epoch 160, iter 161, RL obj 21.7651, HMM obj 0.8298, total obj 22.5949 grad L1-norm 0.9854, took 1.76
+starting epoch 161
+epoch 161, iter 162, RL obj 21.7638, HMM obj 0.8299, total obj 22.5937 grad L1-norm 0.8183, took 1.77
+starting epoch 162
+epoch 162, iter 163, RL obj 21.7628, HMM obj 0.8300, total obj 22.5927 grad L1-norm 0.8246, took 1.80
+starting epoch 163
+epoch 163, iter 164, RL obj 21.7619, HMM obj 0.8298, total obj 22.5917 grad L1-norm 0.8020, took 1.74
+starting epoch 164
+epoch 164, iter 165, RL obj 21.7609, HMM obj 0.8296, total obj 22.5905 grad L1-norm 0.7652, took 1.77
+starting epoch 165
+epoch 165, iter 166, RL obj 21.7598, HMM obj 0.8293, total obj 22.5891 grad L1-norm 0.6846, took 1.73
+starting epoch 166
+epoch 166, iter 167, RL obj 21.7578, HMM obj 0.8290, total obj 22.5868 grad L1-norm 0.9128, took 1.74
+starting epoch 167
+epoch 167, iter 168, RL obj 21.7552, HMM obj 0.8287, total obj 22.5839 grad L1-norm 0.8319, took 1.76
+starting epoch 168
+epoch 168, iter 169, RL obj 21.7536, HMM obj 0.8283, total obj 22.5819 grad L1-norm 1.2143, took 1.71
+starting epoch 169
+epoch 169, iter 170, RL obj 21.7518, HMM obj 0.8279, total obj 22.5797 grad L1-norm 0.8849, took 1.76
+starting epoch 170
+epoch 170, iter 171, RL obj 21.7498, HMM obj 0.8275, total obj 22.5772 grad L1-norm 0.9021, took 1.75
+starting epoch 171
+epoch 171, iter 172, RL obj 21.7478, HMM obj 0.8268, total obj 22.5746 grad L1-norm 0.8242, took 1.71
+starting epoch 172
+epoch 172, iter 173, RL obj 21.7457, HMM obj 0.8262, total obj 22.5719 grad L1-norm 0.9193, took 1.70
+starting epoch 173
+epoch 173, iter 174, RL obj 21.7435, HMM obj 0.8256, total obj 22.5691 grad L1-norm 0.9862, took 1.76
+starting epoch 174
+epoch 174, iter 175, RL obj 21.7419, HMM obj 0.8252, total obj 22.5671 grad L1-norm 0.8805, took 1.75
+starting epoch 175
+epoch 175, iter 176, RL obj 21.7436, HMM obj 0.8251, total obj 22.5686 grad L1-norm 2.1703, took 1.71
+starting epoch 176
+epoch 176, iter 177, RL obj 21.7422, HMM obj 0.8251, total obj 22.5673 grad L1-norm 0.7929, took 1.75
+starting epoch 177
+epoch 177, iter 178, RL obj 21.7390, HMM obj 0.8249, total obj 22.5639 grad L1-norm 1.4745, took 1.76
+starting epoch 178
+epoch 178, iter 179, RL obj 21.7378, HMM obj 0.8243, total obj 22.5621 grad L1-norm 0.9398, took 1.71
+starting epoch 179
+epoch 179, iter 180, RL obj 21.7371, HMM obj 0.8240, total obj 22.5611 grad L1-norm 1.2360, took 1.75
+starting epoch 180
+epoch 180, iter 181, RL obj 21.7362, HMM obj 0.8238, total obj 22.5600 grad L1-norm 0.6955, took 1.70
+starting epoch 181
+epoch 181, iter 182, RL obj 21.7361, HMM obj 0.8233, total obj 22.5594 grad L1-norm 1.2408, took 1.73
+starting epoch 182
+epoch 182, iter 183, RL obj 21.7350, HMM obj 0.8230, total obj 22.5580 grad L1-norm 0.9928, took 1.71
+starting epoch 183
+epoch 183, iter 184, RL obj 21.7343, HMM obj 0.8228, total obj 22.5571 grad L1-norm 0.6120, took 1.74
+starting epoch 184
+epoch 184, iter 185, RL obj 21.7341, HMM obj 0.8226, total obj 22.5567 grad L1-norm 1.8628, took 1.72
+starting epoch 185
+epoch 185, iter 186, RL obj 21.7334, HMM obj 0.8224, total obj 22.5557 grad L1-norm 0.6036, took 1.74
+starting epoch 186
+epoch 186, iter 187, RL obj 21.7330, HMM obj 0.8220, total obj 22.5550 grad L1-norm 0.6614, took 1.95
+starting epoch 187
+epoch 187, iter 188, RL obj 21.7324, HMM obj 0.8217, total obj 22.5542 grad L1-norm 0.6851, took 1.90
+starting epoch 188
+epoch 188, iter 189, RL obj 21.7326, HMM obj 0.8214, total obj 22.5541 grad L1-norm 0.9322, took 1.82
+starting epoch 189
+epoch 189, iter 190, RL obj 21.7312, HMM obj 0.8211, total obj 22.5522 grad L1-norm 0.7239, took 1.78
+starting epoch 190
+epoch 190, iter 191, RL obj 21.7303, HMM obj 0.8207, total obj 22.5510 grad L1-norm 0.7275, took 1.73
+starting epoch 191
+epoch 191, iter 192, RL obj 21.7301, HMM obj 0.8203, total obj 22.5504 grad L1-norm 0.9144, took 1.73
+starting epoch 192
+epoch 192, iter 193, RL obj 21.7291, HMM obj 0.8198, total obj 22.5489 grad L1-norm 0.6824, took 1.77
+starting epoch 193
+epoch 193, iter 194, RL obj 21.7286, HMM obj 0.8193, total obj 22.5479 grad L1-norm 0.6456, took 1.75
+starting epoch 194
+epoch 194, iter 195, RL obj 21.7282, HMM obj 0.8186, total obj 22.5469 grad L1-norm 0.9509, took 1.83
+starting epoch 195
+epoch 195, iter 196, RL obj 21.7274, HMM obj 0.8180, total obj 22.5453 grad L1-norm 0.6032, took 1.77
+starting epoch 196
+epoch 196, iter 197, RL obj 21.7266, HMM obj 0.8172, total obj 22.5438 grad L1-norm 0.6480, took 1.82
+starting epoch 197
+epoch 197, iter 198, RL obj 21.7258, HMM obj 0.8163, total obj 22.5422 grad L1-norm 0.6829, took 1.79
+starting epoch 198
+epoch 198, iter 199, RL obj 21.7246, HMM obj 0.8153, total obj 22.5399 grad L1-norm 0.8178, took 1.78
+starting epoch 199
+epoch 199, iter 200, RL obj 21.7237, HMM obj 0.8141, total obj 22.5378 grad L1-norm 0.9576, took 1.75
+starting epoch 200
+epoch 200, iter 201, RL obj 21.7256, HMM obj 0.8138, total obj 22.5395 grad L1-norm 2.3889, took 1.77
+HMM loglik on test data -0.8251, grad norm 0.5485
+iter 201, est value of policy on test data: -0.11498
+testing deterministic policy via rollouts...
+Avg test return: -0.5690
+quantiles:
+[-1.         -1.         -0.99       -0.96059601 -0.90438208  0.
+  0.94148015  0.99        0.99      ]
+saving!
+starting epoch 201
+epoch 201, iter 202, RL obj 21.7235, HMM obj 0.8137, total obj 22.5372 grad L1-norm 1.3278, took 1.79
+starting epoch 202
+epoch 202, iter 203, RL obj 21.7212, HMM obj 0.8134, total obj 22.5345 grad L1-norm 0.9266, took 1.76
+starting epoch 203
+epoch 203, iter 204, RL obj 21.7192, HMM obj 0.8134, total obj 22.5325 grad L1-norm 0.9068, took 1.74
+starting epoch 204
+epoch 204, iter 205, RL obj 21.7179, HMM obj 0.8135, total obj 22.5313 grad L1-norm 1.2038, took 1.75
+starting epoch 205
+epoch 205, iter 206, RL obj 21.7163, HMM obj 0.8136, total obj 22.5299 grad L1-norm 1.3967, took 1.73
+starting epoch 206
+epoch 206, iter 207, RL obj 21.7137, HMM obj 0.8138, total obj 22.5274 grad L1-norm 1.5536, took 1.74
+starting epoch 207
+epoch 207, iter 208, RL obj 21.7094, HMM obj 0.8138, total obj 22.5232 grad L1-norm 1.9514, took 1.77
+starting epoch 208
+epoch 208, iter 209, RL obj 21.7046, HMM obj 0.8139, total obj 22.5185 grad L1-norm 1.3469, took 1.71
+starting epoch 209
+epoch 209, iter 210, RL obj 21.7011, HMM obj 0.8139, total obj 22.5151 grad L1-norm 1.2957, took 1.75
+starting epoch 210
+epoch 210, iter 211, RL obj 21.6980, HMM obj 0.8136, total obj 22.5115 grad L1-norm 0.9602, took 1.78
+starting epoch 211
+epoch 211, iter 212, RL obj 21.6954, HMM obj 0.8132, total obj 22.5086 grad L1-norm 0.8421, took 1.75
+starting epoch 212
+epoch 212, iter 213, RL obj 21.6968, HMM obj 0.8134, total obj 22.5102 grad L1-norm 1.1324, took 1.72
+starting epoch 213
+epoch 213, iter 214, RL obj 21.6947, HMM obj 0.8129, total obj 22.5075 grad L1-norm 1.6028, took 1.75
+starting epoch 214
+epoch 214, iter 215, RL obj 21.6925, HMM obj 0.8131, total obj 22.5056 grad L1-norm 1.1683, took 1.74
+starting epoch 215
+epoch 215, iter 216, RL obj 21.6915, HMM obj 0.8131, total obj 22.5046 grad L1-norm 0.8876, took 1.93
+starting epoch 216
+epoch 216, iter 217, RL obj 21.6907, HMM obj 0.8130, total obj 22.5037 grad L1-norm 0.9562, took 1.82
+starting epoch 217
+epoch 217, iter 218, RL obj 21.6896, HMM obj 0.8130, total obj 22.5027 grad L1-norm 0.6823, took 1.79
+starting epoch 218
+epoch 218, iter 219, RL obj 21.6887, HMM obj 0.8129, total obj 22.5015 grad L1-norm 0.8046, took 1.79
+starting epoch 219
+epoch 219, iter 220, RL obj 21.6872, HMM obj 0.8127, total obj 22.5000 grad L1-norm 0.8446, took 1.87
+starting epoch 220
+epoch 220, iter 221, RL obj 21.6848, HMM obj 0.8127, total obj 22.4974 grad L1-norm 1.2951, took 1.80
+starting epoch 221
+epoch 221, iter 222, RL obj 21.6817, HMM obj 0.8124, total obj 22.4941 grad L1-norm 1.4602, took 1.72
+starting epoch 222
+epoch 222, iter 223, RL obj 21.6801, HMM obj 0.8121, total obj 22.4922 grad L1-norm 1.0853, took 1.70
+starting epoch 223
+epoch 223, iter 224, RL obj 21.6787, HMM obj 0.8117, total obj 22.4904 grad L1-norm 0.8760, took 1.76
+starting epoch 224
+epoch 224, iter 225, RL obj 21.6778, HMM obj 0.8111, total obj 22.4888 grad L1-norm 0.7331, took 1.71
+starting epoch 225
+epoch 225, iter 226, RL obj 21.6771, HMM obj 0.8106, total obj 22.4877 grad L1-norm 0.6420, took 1.76
+starting epoch 226
+epoch 226, iter 227, RL obj 21.6767, HMM obj 0.8098, total obj 22.4866 grad L1-norm 0.6542, took 1.73
+starting epoch 227
+epoch 227, iter 228, RL obj 21.6764, HMM obj 0.8089, total obj 22.4853 grad L1-norm 0.6395, took 1.72
+starting epoch 228
+epoch 228, iter 229, RL obj 21.6761, HMM obj 0.8079, total obj 22.4840 grad L1-norm 0.6795, took 1.70
+starting epoch 229
+epoch 229, iter 230, RL obj 21.6755, HMM obj 0.8070, total obj 22.4825 grad L1-norm 0.8407, took 1.83
+starting epoch 230
+epoch 230, iter 231, RL obj 21.6748, HMM obj 0.8059, total obj 22.4806 grad L1-norm 0.7225, took 1.71
+starting epoch 231
+epoch 231, iter 232, RL obj 21.6738, HMM obj 0.8046, total obj 22.4784 grad L1-norm 0.7661, took 1.73
+starting epoch 232
+epoch 232, iter 233, RL obj 21.6724, HMM obj 0.8032, total obj 22.4756 grad L1-norm 1.0004, took 1.76
+starting epoch 233
+epoch 233, iter 234, RL obj 21.6710, HMM obj 0.8016, total obj 22.4726 grad L1-norm 3.1258, took 1.73
+starting epoch 234
+epoch 234, iter 235, RL obj 21.6707, HMM obj 0.8002, total obj 22.4709 grad L1-norm 0.6988, took 1.76
+starting epoch 235
+epoch 235, iter 236, RL obj 21.6703, HMM obj 0.7990, total obj 22.4693 grad L1-norm 0.8198, took 1.81
+starting epoch 236
+epoch 236, iter 237, RL obj 21.6698, HMM obj 0.7981, total obj 22.4678 grad L1-norm 0.8850, took 1.72
+starting epoch 237
+epoch 237, iter 238, RL obj 21.6692, HMM obj 0.7974, total obj 22.4666 grad L1-norm 0.5363, took 1.75
+starting epoch 238
+epoch 238, iter 239, RL obj 21.6691, HMM obj 0.7965, total obj 22.4656 grad L1-norm 0.6626, took 1.77
+starting epoch 239
+epoch 239, iter 240, RL obj 21.6688, HMM obj 0.7954, total obj 22.4642 grad L1-norm 0.7660, took 1.76
+starting epoch 240
+epoch 240, iter 241, RL obj 21.6685, HMM obj 0.7943, total obj 22.4628 grad L1-norm 0.6352, took 1.73
+starting epoch 241
+epoch 241, iter 242, RL obj 21.6686, HMM obj 0.7930, total obj 22.4616 grad L1-norm 0.5867, took 1.76
+starting epoch 242
+epoch 242, iter 243, RL obj 21.6686, HMM obj 0.7916, total obj 22.4603 grad L1-norm 0.6892, took 1.72
+starting epoch 243
+epoch 243, iter 244, RL obj 21.6686, HMM obj 0.7905, total obj 22.4592 grad L1-norm 0.6625, took 1.76
+starting epoch 244
+epoch 244, iter 245, RL obj 21.6687, HMM obj 0.7894, total obj 22.4581 grad L1-norm 0.7679, took 1.78
+starting epoch 245
+epoch 245, iter 246, RL obj 21.6688, HMM obj 0.7883, total obj 22.4571 grad L1-norm 0.7197, took 1.72
+starting epoch 246
+epoch 246, iter 247, RL obj 21.6686, HMM obj 0.7872, total obj 22.4557 grad L1-norm 0.5997, took 1.75
+starting epoch 247
+epoch 247, iter 248, RL obj 21.6681, HMM obj 0.7860, total obj 22.4541 grad L1-norm 0.5711, took 1.77
+starting epoch 248
+epoch 248, iter 249, RL obj 21.6677, HMM obj 0.7850, total obj 22.4527 grad L1-norm 0.6152, took 1.75
+starting epoch 249
+epoch 249, iter 250, RL obj 21.6675, HMM obj 0.7837, total obj 22.4512 grad L1-norm 0.7418, took 1.73
+getting new belief set...
+setup beliefs and V...
+starting epoch 250
+epoch 250, iter 251, RL obj 22.9579, HMM obj 0.7828, total obj 23.7407 grad L1-norm 0.3860, took 1.77
+HMM loglik on test data -0.7914, grad norm 0.5142
+iter 251, est value of policy on test data: -0.22250
+testing deterministic policy via rollouts...
+Avg test return: -0.7754
+quantiles:
+[-1.         -1.         -1.         -0.99       -0.970299   -0.93206535
+  0.9801      1.          1.        ]
+saving!
+starting epoch 251
+epoch 251, iter 252, RL obj 22.9579, HMM obj 0.7812, total obj 23.7391 grad L1-norm 0.4643, took 1.73
+starting epoch 252
+epoch 252, iter 253, RL obj 22.9579, HMM obj 0.7794, total obj 23.7373 grad L1-norm 0.4597, took 1.75
+starting epoch 253
+epoch 253, iter 254, RL obj 22.9579, HMM obj 0.7773, total obj 23.7352 grad L1-norm 0.4543, took 2.01
+starting epoch 254
+epoch 254, iter 255, RL obj 22.9579, HMM obj 0.7750, total obj 23.7329 grad L1-norm 0.4477, took 1.77
+starting epoch 255
+epoch 255, iter 256, RL obj 22.9579, HMM obj 0.7724, total obj 23.7303 grad L1-norm 0.4400, took 2.03
+starting epoch 256
+epoch 256, iter 257, RL obj 22.9579, HMM obj 0.7695, total obj 23.7274 grad L1-norm 0.4313, took 1.87
+starting epoch 257
+epoch 257, iter 258, RL obj 22.9579, HMM obj 0.7663, total obj 23.7242 grad L1-norm 0.4211, took 1.72
+starting epoch 258
+epoch 258, iter 259, RL obj 22.9579, HMM obj 0.7629, total obj 23.7208 grad L1-norm 0.4099, took 1.72
+starting epoch 259
+epoch 259, iter 260, RL obj 22.9579, HMM obj 0.7590, total obj 23.7169 grad L1-norm 0.3983, took 1.75
+starting epoch 260
+epoch 260, iter 261, RL obj 22.9579, HMM obj 0.7545, total obj 23.7124 grad L1-norm 0.3863, took 1.73
+starting epoch 261
+epoch 261, iter 262, RL obj 22.9579, HMM obj 0.7494, total obj 23.7073 grad L1-norm 0.3750, took 1.74
+starting epoch 262
+epoch 262, iter 263, RL obj 22.9579, HMM obj 0.7437, total obj 23.7015 grad L1-norm 0.3622, took 1.77
+starting epoch 263
+epoch 263, iter 264, RL obj 22.9579, HMM obj 0.7372, total obj 23.6951 grad L1-norm 0.3462, took 1.73
+starting epoch 264
+epoch 264, iter 265, RL obj 22.9579, HMM obj 0.7301, total obj 23.6879 grad L1-norm 0.3298, took 1.72
+starting epoch 265
+epoch 265, iter 266, RL obj 22.9579, HMM obj 0.7229, total obj 23.6807 grad L1-norm 0.3119, took 1.77
+starting epoch 266
+epoch 266, iter 267, RL obj 22.9579, HMM obj 0.7157, total obj 23.6735 grad L1-norm 0.2933, took 1.75
+starting epoch 267
+epoch 267, iter 268, RL obj 22.9579, HMM obj 0.7084, total obj 23.6663 grad L1-norm 0.2737, took 1.71
+starting epoch 268
+epoch 268, iter 269, RL obj 22.9579, HMM obj 0.7010, total obj 23.6589 grad L1-norm 0.2551, took 1.76
+starting epoch 269
+epoch 269, iter 270, RL obj 22.9579, HMM obj 0.6937, total obj 23.6516 grad L1-norm 0.2365, took 1.75
+starting epoch 270
+epoch 270, iter 271, RL obj 22.9579, HMM obj 0.6865, total obj 23.6444 grad L1-norm 0.2186, took 1.71
+starting epoch 271
+epoch 271, iter 272, RL obj 22.9579, HMM obj 0.6803, total obj 23.6382 grad L1-norm 0.1958, took 1.78
+starting epoch 272
+epoch 272, iter 273, RL obj 22.9579, HMM obj 0.6753, total obj 23.6331 grad L1-norm 0.1812, took 1.73
+starting epoch 273
+epoch 273, iter 274, RL obj 22.9579, HMM obj 0.6712, total obj 23.6291 grad L1-norm 0.1679, took 1.71
+starting epoch 274
+epoch 274, iter 275, RL obj 22.9579, HMM obj 0.6678, total obj 23.6257 grad L1-norm 0.1612, took 1.72
+starting epoch 275
+epoch 275, iter 276, RL obj 22.9579, HMM obj 0.6646, total obj 23.6225 grad L1-norm 0.1586, took 1.74
+starting epoch 276
+epoch 276, iter 277, RL obj 22.9579, HMM obj 0.6618, total obj 23.6197 grad L1-norm 0.1485, took 1.73
+starting epoch 277
+epoch 277, iter 278, RL obj 22.9579, HMM obj 0.6595, total obj 23.6174 grad L1-norm 0.1394, took 1.71
+starting epoch 278
+epoch 278, iter 279, RL obj 22.9579, HMM obj 0.6576, total obj 23.6155 grad L1-norm 0.1362, took 1.74
+starting epoch 279
+epoch 279, iter 280, RL obj 22.9579, HMM obj 0.6557, total obj 23.6136 grad L1-norm 0.1321, took 1.71
+starting epoch 280
+epoch 280, iter 281, RL obj 22.9579, HMM obj 0.6537, total obj 23.6116 grad L1-norm 0.1279, took 1.73
+starting epoch 281
+epoch 281, iter 282, RL obj 22.9579, HMM obj 0.6518, total obj 23.6097 grad L1-norm 0.1217, took 1.87
+starting epoch 282
+epoch 282, iter 283, RL obj 22.9579, HMM obj 0.6500, total obj 23.6079 grad L1-norm 0.1155, took 1.91
+starting epoch 283
+epoch 283, iter 284, RL obj 22.9579, HMM obj 0.6484, total obj 23.6062 grad L1-norm 0.1146, took 2.05
+starting epoch 284
+epoch 284, iter 285, RL obj 22.9579, HMM obj 0.6468, total obj 23.6047 grad L1-norm 0.1087, took 2.23
+starting epoch 285
+epoch 285, iter 286, RL obj 22.9579, HMM obj 0.6452, total obj 23.6031 grad L1-norm 0.1041, took 2.24
+starting epoch 286
+epoch 286, iter 287, RL obj 22.9579, HMM obj 0.6437, total obj 23.6016 grad L1-norm 0.1017, took 2.01
+starting epoch 287
+epoch 287, iter 288, RL obj 22.9579, HMM obj 0.6422, total obj 23.6001 grad L1-norm 0.0960, took 2.22
+starting epoch 288
+epoch 288, iter 289, RL obj 22.9579, HMM obj 0.6407, total obj 23.5986 grad L1-norm 0.0930, took 1.98
+starting epoch 289
+epoch 289, iter 290, RL obj 22.9579, HMM obj 0.6392, total obj 23.5971 grad L1-norm 0.0882, took 1.86
+starting epoch 290
+epoch 290, iter 291, RL obj 22.9579, HMM obj 0.6378, total obj 23.5957 grad L1-norm 0.0845, took 1.83
+starting epoch 291
+epoch 291, iter 292, RL obj 22.9579, HMM obj 0.6365, total obj 23.5943 grad L1-norm 0.0788, took 1.80
+starting epoch 292
+epoch 292, iter 293, RL obj 22.9579, HMM obj 0.6352, total obj 23.5931 grad L1-norm 0.0730, took 1.82
+starting epoch 293
+epoch 293, iter 294, RL obj 22.9579, HMM obj 0.6340, total obj 23.5919 grad L1-norm 0.0676, took 1.77
+starting epoch 294
+epoch 294, iter 295, RL obj 22.9579, HMM obj 0.6329, total obj 23.5908 grad L1-norm 0.0664, took 1.74
+starting epoch 295
+epoch 295, iter 296, RL obj 22.9579, HMM obj 0.6318, total obj 23.5897 grad L1-norm 0.0660, took 1.93
+starting epoch 296
+epoch 296, iter 297, RL obj 22.9579, HMM obj 0.6307, total obj 23.5886 grad L1-norm 0.0634, took 1.95
+starting epoch 297
+epoch 297, iter 298, RL obj 22.9579, HMM obj 0.6296, total obj 23.5875 grad L1-norm 0.0620, took 1.76
+starting epoch 298
+epoch 298, iter 299, RL obj 22.9579, HMM obj 0.6285, total obj 23.5864 grad L1-norm 0.0617, took 1.79
+starting epoch 299
+epoch 299, iter 300, RL obj 22.9579, HMM obj 0.6274, total obj 23.5853 grad L1-norm 0.0608, took 2.01
+starting epoch 300
+epoch 300, iter 301, RL obj 22.9579, HMM obj 0.6263, total obj 23.5842 grad L1-norm 0.0613, took 1.73
+HMM loglik on test data -0.6259, grad norm 0.1221
+iter 301, est value of policy on test data: -0.22250
+testing deterministic policy via rollouts...
+Avg test return: -0.7754
+quantiles:
+[-1.         -1.         -1.         -0.99       -0.970299   -0.93206535
+  0.9801      1.          1.        ]
+saving!
+starting epoch 301
+epoch 301, iter 302, RL obj 22.9579, HMM obj 0.6252, total obj 23.5830 grad L1-norm 0.0604, took 2.49
+starting epoch 302
+epoch 302, iter 303, RL obj 22.9579, HMM obj 0.6240, total obj 23.5819 grad L1-norm 0.0654, took 2.30
+starting epoch 303
+epoch 303, iter 304, RL obj 22.9579, HMM obj 0.6226, total obj 23.5805 grad L1-norm 0.0716, took 2.17
+starting epoch 304
+epoch 304, iter 305, RL obj 22.9579, HMM obj 0.6209, total obj 23.5788 grad L1-norm 0.0859, took 1.94
+starting epoch 305
+epoch 305, iter 306, RL obj 22.9579, HMM obj 0.6189, total obj 23.5768 grad L1-norm 0.0896, took 1.90
+starting epoch 306
+epoch 306, iter 307, RL obj 22.9579, HMM obj 0.6169, total obj 23.5748 grad L1-norm 0.0880, took 2.00
+starting epoch 307
+epoch 307, iter 308, RL obj 22.9579, HMM obj 0.6151, total obj 23.5729 grad L1-norm 0.0903, took 1.84
+starting epoch 308
+epoch 308, iter 309, RL obj 22.9579, HMM obj 0.6132, total obj 23.5711 grad L1-norm 0.0887, took 1.80
+starting epoch 309
+epoch 309, iter 310, RL obj 22.9579, HMM obj 0.6116, total obj 23.5695 grad L1-norm 0.0856, took 1.75
+starting epoch 310
+epoch 310, iter 311, RL obj 22.9579, HMM obj 0.6101, total obj 23.5679 grad L1-norm 0.0845, took 1.72
+starting epoch 311
+epoch 311, iter 312, RL obj 22.9579, HMM obj 0.6086, total obj 23.5665 grad L1-norm 0.0795, took 1.86
+starting epoch 312
+epoch 312, iter 313, RL obj 22.9579, HMM obj 0.6074, total obj 23.5652 grad L1-norm 0.0718, took 1.86
+starting epoch 313
+epoch 313, iter 314, RL obj 22.9579, HMM obj 0.6063, total obj 23.5641 grad L1-norm 0.0657, took 2.08
+starting epoch 314
+epoch 314, iter 315, RL obj 22.9579, HMM obj 0.6054, total obj 23.5632 grad L1-norm 0.0621, took 1.81
+starting epoch 315
+epoch 315, iter 316, RL obj 22.9579, HMM obj 0.6044, total obj 23.5623 grad L1-norm 0.0621, took 1.91
+starting epoch 316
+epoch 316, iter 317, RL obj 22.9579, HMM obj 0.6034, total obj 23.5613 grad L1-norm 0.0545, took 1.96
+starting epoch 317
+epoch 317, iter 318, RL obj 22.9579, HMM obj 0.6025, total obj 23.5604 grad L1-norm 0.0482, took 2.00
+starting epoch 318
+epoch 318, iter 319, RL obj 22.9579, HMM obj 0.6017, total obj 23.5596 grad L1-norm 0.0445, took 2.14
+starting epoch 319
+epoch 319, iter 320, RL obj 22.9579, HMM obj 0.6009, total obj 23.5588 grad L1-norm 0.0402, took 2.00
+starting epoch 320
+epoch 320, iter 321, RL obj 22.9579, HMM obj 0.6002, total obj 23.5581 grad L1-norm 0.0360, took 2.01
+starting epoch 321
+epoch 321, iter 322, RL obj 22.9579, HMM obj 0.5996, total obj 23.5575 grad L1-norm 0.0344, took 2.14
+starting epoch 322
+epoch 322, iter 323, RL obj 22.9579, HMM obj 0.5989, total obj 23.5568 grad L1-norm 0.0326, took 2.04
+starting epoch 323
+epoch 323, iter 324, RL obj 22.9579, HMM obj 0.5984, total obj 23.5563 grad L1-norm 0.0298, took 1.90
+starting epoch 324
+epoch 324, iter 325, RL obj 22.9579, HMM obj 0.5979, total obj 23.5558 grad L1-norm 0.0276, took 1.96
+starting epoch 325
+epoch 325, iter 326, RL obj 22.9579, HMM obj 0.5975, total obj 23.5553 grad L1-norm 0.0246, took 1.95
+starting epoch 326
+epoch 326, iter 327, RL obj 22.9579, HMM obj 0.5969, total obj 23.5548 grad L1-norm 0.0258, took 1.92
+starting epoch 327
+epoch 327, iter 328, RL obj 22.9579, HMM obj 0.5963, total obj 23.5542 grad L1-norm 0.0243, took 2.07
+starting epoch 328
+epoch 328, iter 329, RL obj 22.9579, HMM obj 0.5957, total obj 23.5536 grad L1-norm 0.0223, took 1.96
+starting epoch 329
+epoch 329, iter 330, RL obj 22.9579, HMM obj 0.5951, total obj 23.5529 grad L1-norm 0.0236, took 1.89
+starting epoch 330
+epoch 330, iter 331, RL obj 22.9579, HMM obj 0.5944, total obj 23.5523 grad L1-norm 0.0226, took 2.26
+starting epoch 331
+epoch 331, iter 332, RL obj 22.9579, HMM obj 0.5938, total obj 23.5516 grad L1-norm 0.0259, took 1.85
+starting epoch 332
+epoch 332, iter 333, RL obj 22.9579, HMM obj 0.5931, total obj 23.5510 grad L1-norm 0.0256, took 1.77
+starting epoch 333
+epoch 333, iter 334, RL obj 22.9579, HMM obj 0.5925, total obj 23.5504 grad L1-norm 0.0254, took 1.90
+starting epoch 334
+epoch 334, iter 335, RL obj 22.9579, HMM obj 0.5919, total obj 23.5498 grad L1-norm 0.0244, took 2.06
+starting epoch 335
+epoch 335, iter 336, RL obj 22.9579, HMM obj 0.5914, total obj 23.5493 grad L1-norm 0.0231, took 1.85
+starting epoch 336
+epoch 336, iter 337, RL obj 22.9579, HMM obj 0.5910, total obj 23.5489 grad L1-norm 0.0246, took 2.13
+starting epoch 337
+epoch 337, iter 338, RL obj 22.9579, HMM obj 0.5905, total obj 23.5484 grad L1-norm 0.0245, took 1.82
+starting epoch 338
+epoch 338, iter 339, RL obj 22.9579, HMM obj 0.5901, total obj 23.5480 grad L1-norm 0.0241, took 1.92
+starting epoch 339
+epoch 339, iter 340, RL obj 22.9579, HMM obj 0.5897, total obj 23.5476 grad L1-norm 0.0261, took 1.93
+starting epoch 340
+epoch 340, iter 341, RL obj 22.9579, HMM obj 0.5893, total obj 23.5471 grad L1-norm 0.0251, took 1.78
+starting epoch 341
+epoch 341, iter 342, RL obj 22.9579, HMM obj 0.5889, total obj 23.5467 grad L1-norm 0.0252, took 1.89
+starting epoch 342
+epoch 342, iter 343, RL obj 22.9579, HMM obj 0.5885, total obj 23.5464 grad L1-norm 0.0249, took 1.85
+starting epoch 343
+epoch 343, iter 344, RL obj 22.9579, HMM obj 0.5882, total obj 23.5461 grad L1-norm 0.0235, took 1.95
+starting epoch 344
+epoch 344, iter 345, RL obj 22.9579, HMM obj 0.5878, total obj 23.5457 grad L1-norm 0.0208, took 1.87
+starting epoch 345
+epoch 345, iter 346, RL obj 22.9579, HMM obj 0.5875, total obj 23.5454 grad L1-norm 0.0199, took 2.24
+starting epoch 346
+epoch 346, iter 347, RL obj 22.9579, HMM obj 0.5872, total obj 23.5450 grad L1-norm 0.0180, took 2.13
+starting epoch 347
+epoch 347, iter 348, RL obj 22.9579, HMM obj 0.5869, total obj 23.5447 grad L1-norm 0.0158, took 1.84
+starting epoch 348
+epoch 348, iter 349, RL obj 22.9579, HMM obj 0.5866, total obj 23.5445 grad L1-norm 0.0149, took 1.87
+starting epoch 349
+epoch 349, iter 350, RL obj 22.9579, HMM obj 0.5863, total obj 23.5442 grad L1-norm 0.0132, took 2.00
+starting epoch 350
+epoch 350, iter 351, RL obj 22.9579, HMM obj 0.5862, total obj 23.5440 grad L1-norm 0.0135, took 1.81
+HMM loglik on test data -0.5851, grad norm 0.0842
+iter 351, est value of policy on test data: -0.22250
+testing deterministic policy via rollouts...
+Avg test return: -0.7754
+quantiles:
+[-1.         -1.         -1.         -0.99       -0.970299   -0.93206535
+  0.9801      1.          1.        ]
+saving!
+starting epoch 351
+epoch 351, iter 352, RL obj 22.9579, HMM obj 0.5860, total obj 23.5439 grad L1-norm 0.0146, took 2.10
+starting epoch 352
+epoch 352, iter 353, RL obj 22.9579, HMM obj 0.5859, total obj 23.5438 grad L1-norm 0.0142, took 1.78
+starting epoch 353
+epoch 353, iter 354, RL obj 22.9579, HMM obj 0.5858, total obj 23.5436 grad L1-norm 0.0135, took 1.73
+starting epoch 354
+epoch 354, iter 355, RL obj 22.9579, HMM obj 0.5856, total obj 23.5435 grad L1-norm 0.0137, took 1.77
+starting epoch 355
+epoch 355, iter 356, RL obj 22.9579, HMM obj 0.5855, total obj 23.5434 grad L1-norm 0.0134, took 1.77
+starting epoch 356
+epoch 356, iter 357, RL obj 22.9579, HMM obj 0.5853, total obj 23.5432 grad L1-norm 0.0142, took 1.74
+starting epoch 357
+epoch 357, iter 358, RL obj 22.9579, HMM obj 0.5852, total obj 23.5430 grad L1-norm 0.0132, took 1.75
+starting epoch 358
+epoch 358, iter 359, RL obj 22.9579, HMM obj 0.5850, total obj 23.5429 grad L1-norm 0.0124, took 2.03
+starting epoch 359
+epoch 359, iter 360, RL obj 22.9579, HMM obj 0.5848, total obj 23.5427 grad L1-norm 0.0126, took 1.88
+starting epoch 360
+epoch 360, iter 361, RL obj 22.9579, HMM obj 0.5846, total obj 23.5425 grad L1-norm 0.0114, took 1.75
+starting epoch 361
+epoch 361, iter 362, RL obj 22.9579, HMM obj 0.5844, total obj 23.5423 grad L1-norm 0.0111, took 1.77
+starting epoch 362
+epoch 362, iter 363, RL obj 22.9579, HMM obj 0.5842, total obj 23.5421 grad L1-norm 0.0111, took 1.72
+starting epoch 363
+epoch 363, iter 364, RL obj 22.9579, HMM obj 0.5840, total obj 23.5419 grad L1-norm 0.0112, took 1.75
+starting epoch 364
+epoch 364, iter 365, RL obj 22.9579, HMM obj 0.5838, total obj 23.5417 grad L1-norm 0.0106, took 1.79
+starting epoch 365
+epoch 365, iter 366, RL obj 22.9579, HMM obj 0.5836, total obj 23.5415 grad L1-norm 0.0112, took 1.95
+starting epoch 366
+epoch 366, iter 367, RL obj 22.9579, HMM obj 0.5834, total obj 23.5413 grad L1-norm 0.0106, took 1.73
+starting epoch 367
+epoch 367, iter 368, RL obj 22.9579, HMM obj 0.5833, total obj 23.5411 grad L1-norm 0.0089, took 1.85
+starting epoch 368
+epoch 368, iter 369, RL obj 22.9579, HMM obj 0.5832, total obj 23.5410 grad L1-norm 0.0089, took 2.06
+starting epoch 369
+epoch 369, iter 370, RL obj 22.9579, HMM obj 0.5831, total obj 23.5409 grad L1-norm 0.0084, took 1.97
+starting epoch 370
+epoch 370, iter 371, RL obj 22.9579, HMM obj 0.5830, total obj 23.5409 grad L1-norm 0.0060, took 2.14
+starting epoch 371
+epoch 371, iter 372, RL obj 22.9579, HMM obj 0.5829, total obj 23.5408 grad L1-norm 0.0058, took 1.91
+starting epoch 372
+epoch 372, iter 373, RL obj 22.9579, HMM obj 0.5829, total obj 23.5407 grad L1-norm 0.0069, took 1.88
+starting epoch 373
+epoch 373, iter 374, RL obj 22.9579, HMM obj 0.5828, total obj 23.5407 grad L1-norm 0.0058, took 2.31
+starting epoch 374
+epoch 374, iter 375, RL obj 22.9579, HMM obj 0.5827, total obj 23.5406 grad L1-norm 0.0049, took 2.32
+starting epoch 375
+epoch 375, iter 376, RL obj 22.9579, HMM obj 0.5827, total obj 23.5405 grad L1-norm 0.0048, took 1.98
+starting epoch 376
+epoch 376, iter 377, RL obj 22.9579, HMM obj 0.5826, total obj 23.5405 grad L1-norm 0.0042, took 2.77
+starting epoch 377
+epoch 377, iter 378, RL obj 22.9579, HMM obj 0.5825, total obj 23.5404 grad L1-norm 0.0042, took 2.48
+starting epoch 378
+epoch 378, iter 379, RL obj 22.9579, HMM obj 0.5825, total obj 23.5403 grad L1-norm 0.0043, took 1.99
+starting epoch 379
+epoch 379, iter 380, RL obj 22.9579, HMM obj 0.5824, total obj 23.5403 grad L1-norm 0.0042, took 1.98
+starting epoch 380
+epoch 380, iter 381, RL obj 22.9579, HMM obj 0.5823, total obj 23.5402 grad L1-norm 0.0040, took 2.01
+starting epoch 381
+epoch 381, iter 382, RL obj 22.9579, HMM obj 0.5822, total obj 23.5401 grad L1-norm 0.0043, took 2.24
+starting epoch 382
+epoch 382, iter 383, RL obj 22.9579, HMM obj 0.5822, total obj 23.5400 grad L1-norm 0.0044, took 2.19
+starting epoch 383
+epoch 383, iter 384, RL obj 22.9579, HMM obj 0.5821, total obj 23.5400 grad L1-norm 0.0042, took 2.15
+starting epoch 384
+epoch 384, iter 385, RL obj 22.9579, HMM obj 0.5820, total obj 23.5399 grad L1-norm 0.0041, took 2.41
+starting epoch 385
+epoch 385, iter 386, RL obj 22.9579, HMM obj 0.5819, total obj 23.5398 grad L1-norm 0.0042, took 2.19
+starting epoch 386
+epoch 386, iter 387, RL obj 22.9579, HMM obj 0.5819, total obj 23.5397 grad L1-norm 0.0039, took 2.19
+starting epoch 387
+epoch 387, iter 388, RL obj 22.9579, HMM obj 0.5818, total obj 23.5397 grad L1-norm 0.0035, took 2.05
+starting epoch 388
+epoch 388, iter 389, RL obj 22.9579, HMM obj 0.5817, total obj 23.5396 grad L1-norm 0.0031, took 1.95
+starting epoch 389
+epoch 389, iter 390, RL obj 22.9579, HMM obj 0.5817, total obj 23.5395 grad L1-norm 0.0030, took 2.18
+starting epoch 390
+epoch 390, iter 391, RL obj 22.9579, HMM obj 0.5816, total obj 23.5395 grad L1-norm 0.0028, took 2.15
+starting epoch 391
+epoch 391, iter 392, RL obj 22.9579, HMM obj 0.5815, total obj 23.5394 grad L1-norm 0.0026, took 2.07
+starting epoch 392
+epoch 392, iter 393, RL obj 22.9579, HMM obj 0.5815, total obj 23.5394 grad L1-norm 0.0025, took 2.31
+starting epoch 393
+epoch 393, iter 394, RL obj 22.9579, HMM obj 0.5814, total obj 23.5393 grad L1-norm 0.0025, took 2.30
+starting epoch 394
+epoch 394, iter 395, RL obj 22.9579, HMM obj 0.5814, total obj 23.5392 grad L1-norm 0.0024, took 2.27
+starting epoch 395
+epoch 395, iter 396, RL obj 22.9579, HMM obj 0.5813, total obj 23.5392 grad L1-norm 0.0023, took 2.30
+starting epoch 396
+epoch 396, iter 397, RL obj 22.9579, HMM obj 0.5812, total obj 23.5391 grad L1-norm 0.0023, took 1.86
+starting epoch 397
+epoch 397, iter 398, RL obj 22.9579, HMM obj 0.5812, total obj 23.5391 grad L1-norm 0.0026, took 1.75
+starting epoch 398
+epoch 398, iter 399, RL obj 22.9579, HMM obj 0.5812, total obj 23.5390 grad L1-norm 0.0023, took 1.95
+starting epoch 399
+epoch 399, iter 400, RL obj 22.9579, HMM obj 0.5811, total obj 23.5390 grad L1-norm 0.0022, took 1.90
+starting epoch 400
+epoch 400, iter 401, RL obj 22.9579, HMM obj 0.5811, total obj 23.5389 grad L1-norm 0.0023, took 1.87
+HMM loglik on test data -0.5793, grad norm 0.0801
+iter 401, est value of policy on test data: -0.22250
+testing deterministic policy via rollouts...
+Avg test return: -0.7754
+quantiles:
+[-1.         -1.         -1.         -0.99       -0.970299   -0.93206535
+  0.9801      1.          1.        ]
+saving!
+starting epoch 401
+epoch 401, iter 402, RL obj 22.9579, HMM obj 0.5810, total obj 23.5389 grad L1-norm 0.0023, took 2.08
+starting epoch 402
+epoch 402, iter 403, RL obj 22.9579, HMM obj 0.5810, total obj 23.5389 grad L1-norm 0.0021, took 2.15
+starting epoch 403
+epoch 403, iter 404, RL obj 22.9579, HMM obj 0.5810, total obj 23.5389 grad L1-norm 0.0019, took 2.08
+starting epoch 404
+epoch 404, iter 405, RL obj 22.9579, HMM obj 0.5810, total obj 23.5389 grad L1-norm 0.0017, took 2.18
+starting epoch 405

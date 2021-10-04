@@ -12,7 +12,7 @@ from autograd.extend import vspace
 from autograd.wrap_util import unary_to_nary
 
 import autograd.extend
-from autograd.scipy.misc import logsumexp
+from autograd.scipy.special import logsumexp
 from autograd import elementwise_grad, grad
 from autograd.extend import primitive, defvjp
 import autograd.scipy.stats as stat

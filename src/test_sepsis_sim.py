@@ -20,7 +20,7 @@ import autograd.numpy as np
 from autograd import grad
 from autograd import value_and_grad as vg
 from autograd import make_vjp
-from autograd.scipy.misc import logsumexp
+from autograd.scipy.special import logsumexp
 from autograd.misc.flatten import flatten_func,flatten
 import autograd.scipy.stats as stat
 
@@ -34,6 +34,9 @@ from sepsis_simulator.sepsisSimDiabetes.DataGenerator import DataGenerator
 from sepsis_simulator.sepsisSimDiabetes.MDP import MDP
 from sepsis_simulator.sepsisSimDiabetes.State import State
 from sepsis_simulator.sepsisSimDiabetes.Action import Action
+
+import matplotlib.pyplot as plt
+
 
 
 def update_and_write_savedict(save_dict):
@@ -203,8 +206,8 @@ def get_param_inits(param_init,n_PBVI_iters=25):
 
     best_obj = np.inf #will select the best init based on PC objective: HMM_obj + lambda*RL_obj
     best_EM_obj = np.inf
-
-    for restart in range(n_restarts):
+    #for restart in range(n_restarts)
+    for restart in range(50):
         t = time()
 
         params = params_init(param_init)
@@ -230,14 +233,15 @@ def get_param_inits(param_init,n_PBVI_iters=25):
         all_beliefs_tr = get_beliefs(params,seq_lens_tr,actions_tr,observs_tr,
             observs_missing_mask=observs_mask_tr,
             init_observs=init_observs_tr,init_observs_missing_mask=init_observs_mask_tr)
-        CWPDIS_obj,(_,_,ESS,_,_,_,_) = softmax_policy_value_objective_term(nat_params,R,R_sd,V,B,
+          
+        CWPDIS_obj,(_,_,ESS,_,_,_,_) = softmax_policy_value_objective_term(nat_params,R,V,B,
             behav_action_probs=action_probs_tr,all_beh_probs=None,actions=actions_tr,
             init_actions=None,observs=observs_tr,init_observs=init_observs_tr,
             observs_missing_mask=observs_mask_tr,init_observs_missing_mask=init_observs_mask_tr,
             rewards=rewards_tr,seq_lens=seq_lens_tr,gamma=gamma,alpha_temp=.01,
             PBVI_update_iters=0,belief_with_reward=False,
             PBVI_temps=[.01,.01,.01],update_V = False,
-            cached_beliefs=all_beliefs_tr,gr_safety_thresh=0,prune_num=0)
+            cached_beliefs=all_beliefs_tr,gr_safety_thresh=0,prune_num=0,R_sd=R_sd)
         polvals_tr.append(-CWPDIS_obj)
         ESS_tr.append(ESS)
 
@@ -264,14 +268,14 @@ def get_param_inits(param_init,n_PBVI_iters=25):
             all_beliefs_te = get_beliefs(params,seq_lens_te,actions_te,observs_te,
                 observs_missing_mask=observs_mask_te,init_observs=init_observs_te,
                 init_observs_missing_mask=init_observs_mask_te)
-            CWPDIS_obj,(_,_,ESS,_,_,_,_) = softmax_policy_value_objective_term(nat_params,R,R_sd,V,B,
+            CWPDIS_obj,(_,_,ESS,_,_,_,_) = softmax_policy_value_objective_term(nat_params,R,V,B,
                 behav_action_probs=action_probs_te,all_beh_probs=None,actions=actions_te,
                 init_actions=None,observs=observs_te,init_observs=init_observs_te,
                 observs_missing_mask=observs_mask_te,init_observs_missing_mask=init_observs_mask_te,
                 rewards=rewards_te,seq_lens=seq_lens_te,gamma=gamma,alpha_temp=.01,
                 PBVI_update_iters=0,belief_with_reward=False,
                 PBVI_temps=[.01,.01,.01],update_V = False,
-                cached_beliefs=all_beliefs_te,gr_safety_thresh=0,prune_num=0)
+                cached_beliefs=all_beliefs_te,gr_safety_thresh=0,prune_num=0,R_sd=R_sd)
 
             # Cache and reset numpy state bc internal simulator requires 
             # setting global np seed and not local rng's...dumb...
@@ -317,14 +321,14 @@ def get_param_inits(param_init,n_PBVI_iters=25):
                 all_beliefs_te = get_beliefs(params,seq_lens_te,actions_te,observs_te,
                     observs_missing_mask=observs_mask_te,init_observs=init_observs_te,
                     init_observs_missing_mask=init_observs_mask_te)
-                CWPDIS_obj,(_,_,ESS,_,_,_,_) = softmax_policy_value_objective_term(nat_params,R,R_sd,V,B,
+                CWPDIS_obj,(_,_,ESS,_,_,_,_) = softmax_policy_value_objective_term(nat_params,R,V,B,
                     behav_action_probs=action_probs_te,all_beh_probs=None,actions=actions_te,
                     init_actions=None,observs=observs_te,init_observs=init_observs_te,
                     observs_missing_mask=observs_mask_te,init_observs_missing_mask=init_observs_mask_te,
                     rewards=rewards_te,seq_lens=seq_lens_te,gamma=gamma,alpha_temp=.01,
                     PBVI_update_iters=0,belief_with_reward=False,
                     PBVI_temps=[.01,.01,.01],update_V = False,
-                    cached_beliefs=all_beliefs_te,gr_safety_thresh=0,prune_num=0)
+                    cached_beliefs=all_beliefs_te,gr_safety_thresh=0,prune_num=0,R_sd=R_sd)
 
                 # Cache and reset numpy state bc internal simulator requires 
                 # setting global np seed and not local rng's...dumb...
@@ -380,8 +384,8 @@ if __name__ == "__main__":
     cluster = sys.argv[2]
     assert cluster=='h' or cluster=='d' or cluster=='l'
     if cluster=='h': 
-        DATA_PATH = '/n/scratchlfs/doshi-velez_lab/jfutoma/prediction_constrained_RL/data/sepsisSimData/sepsis_simulator_policies.p'
-        OUT_PATH = '/n/scratchlfs/doshi-velez_lab/jfutoma/prediction_constrained_RL/experiments/sepsis_sim/'
+        DATA_PATH = 'data/sepsisSimData/sepsis_simulator_policies.p'
+        OUT_PATH = 'experiments/sepsis_sim/'
     if cluster=='d':
         OUT_PATH = '/hpchome/statdept/jdf38/prediction_constrained_RL/experiments/sepsis_sim/'
     if cluster=='l':
@@ -400,7 +404,8 @@ if __name__ == "__main__":
     obs_sigs = np.array([0.3]) 
     meas_probs = np.array([0.5,0.75,0.9,1.0])
     num_states = np.array([5])
-    lambds = np.power(10,np.array([-2.0,-1.5,-1.0,-0.5,0,0.5,np.inf]))
+    # lambds = np.power(10,np.array([-2.0,-1.5,-1.0,-0.5,0,0.5,np.inf]))
+    lambds = [0]
     prune_nums = np.array([0]) #10
     inits = np.array(['random','EM-random']) #random
     ESS_penalties = np.array([0,10]) #0, 10
@@ -481,6 +486,7 @@ if __name__ == "__main__":
             policy=eps_greedy_policy, policy_idx_type='full', p_diabetes=0.2,
             output_state_idx_type='full',obs_sigmas=obs_sig)
 
+
     eps_greedy_rew = np.copy(rewards_tr)
     eps_greedy_rew[np.isinf(eps_greedy_rew)] = 0
     gam_t = np.power(gamma,np.arange(max_steps))
@@ -523,7 +529,7 @@ if __name__ == "__main__":
     HMMobj_g = vg(HMM_obj_fun)
 
     ### learning params
-    n_epochs = 5000
+    n_epochs = 300
     batchsize = N 
     lr = 1e-3
 
@@ -599,7 +605,7 @@ if __name__ == "__main__":
             #####
 
             RL_obj,(V,CWPDIS_obj,ESS,CWPDIS_nums,CWPDIS_denoms,
-                ESS_noprune,CWPDIS_obj_noprune),RL_grad = RLobj_V_g(nat_params,R,R_sd,V,B,
+                ESS_noprune,CWPDIS_obj_noprune),RL_grad = RLobj_V_g(nat_params,R,V,B,
                 behav_action_probs=action_probs_tr,all_beh_probs=None,actions=actions_tr,
                 init_actions=None,observs=observs_tr,init_observs=init_observs_tr,
                 observs_missing_mask=observs_mask_tr,init_observs_missing_mask=init_observs_mask_tr,
@@ -607,7 +613,7 @@ if __name__ == "__main__":
                 PBVI_update_iters=0,belief_with_reward=False,
                 PBVI_temps=[.01,.01,.01],update_V = True,
                 ESS_penalty=ESS_penalty,V_penalty=1e-5,
-                cached_beliefs=None,gr_safety_thresh=0,prune_num=0)
+                cached_beliefs=None,gr_safety_thresh=0,prune_num=0,R_sd=R_sd)
 
             try:
                 V = [V[0]._value,V[1]._value]
@@ -693,14 +699,14 @@ if __name__ == "__main__":
                     init_observs_missing_mask=init_observs_mask_te)
 
                 _,(V,CWPDIS_obj,ESS,CWPDIS_nums,CWPDIS_denoms,
-                    ESS_noprune,CWPDIS_obj_noprune) = softmax_policy_value_objective_term(nat_params,R,R_sd,V,B,
+                    ESS_noprune,CWPDIS_obj_noprune) = softmax_policy_value_objective_term(nat_params,R,V,B,
                     behav_action_probs=action_probs_te,all_beh_probs=None,actions=actions_te,
                     init_actions=None,observs=observs_te,init_observs=init_observs_te,
                     observs_missing_mask=observs_mask_te,init_observs_missing_mask=init_observs_mask_te,
                     rewards=rewards_te,seq_lens=seq_lens_te,gamma=gamma,alpha_temp=.01,
                     PBVI_update_iters=0,belief_with_reward=False,
                     PBVI_temps=[.01,.01,.01],update_V = False,
-                    cached_beliefs=all_beliefs_te,gr_safety_thresh=0,prune_num=0)
+                    cached_beliefs=all_beliefs_te,gr_safety_thresh=0,prune_num=0,R_sd=R_sd)
 
                 print('iter %d, est value of policy on test data: %.5f' %(tot_iter,CWPDIS_obj_noprune))
                 # est_te_policy_val.append(CWPDIS_obj)
@@ -757,3 +763,12 @@ if __name__ == "__main__":
                 print("setup beliefs and V...")
 
                 # tracked_Bs.append(B)
+    fig, (ax1, ax2) = plt.subplots(2)
+    fig.suptitle('Learning objectives on test data, lambda = 0')
+    ax1.set(xlabel='iteration', ylabel='IOHMM liklihood')
+    ax1.plot(HMM_te_objs)
+    ax2.set(xlabel='iteration', ylabel='Policy Value')
+    ax2.plot(est_te_policy_val_np)
+    fig.savefig('learning_objectives_two_stage.png')
+    
+    

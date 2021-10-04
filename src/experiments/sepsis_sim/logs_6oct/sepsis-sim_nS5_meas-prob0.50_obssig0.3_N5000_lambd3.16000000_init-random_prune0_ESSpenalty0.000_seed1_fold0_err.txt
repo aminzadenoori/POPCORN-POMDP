@@ -1,0 +1,22 @@
+C:\Users\Novin Soft\AppData\Local\Programs\Python\Python39\lib\site-packages\autograd\tracer.py:48: RuntimeWarning: invalid value encountered in log
+  return f_raw(*args, **kwargs)
+Traceback (most recent call last):
+  File "F:\Phd projects\POPCORN-POMDP\src\test_sepsis_sim.py", line 608, in <module>
+    ESS_noprune,CWPDIS_obj_noprune),RL_grad = RLobj_V_g(nat_params,R,V,B,
+  File "C:\Users\Novin Soft\AppData\Local\Programs\Python\Python39\lib\site-packages\autograd\wrap_util.py", line 20, in nary_f
+    return unary_operator(unary_f, x, *nary_op_args, **nary_op_kwargs)
+  File "F:\Phd projects\POPCORN-POMDP\src\util.py", line 294, in value_and_output_and_grad
+    return ans, aux, vjp((vspace(ans).ones(), vspace(aux).zeros()))
+  File "C:\Users\Novin Soft\AppData\Local\Programs\Python\Python39\lib\site-packages\autograd\core.py", line 14, in vjp
+    def vjp(g): return backward_pass(g, end_node)
+  File "C:\Users\Novin Soft\AppData\Local\Programs\Python\Python39\lib\site-packages\autograd\core.py", line 23, in backward_pass
+    outgrads[parent] = add_outgrads(outgrads.get(parent), ingrad)
+  File "C:\Users\Novin Soft\AppData\Local\Programs\Python\Python39\lib\site-packages\autograd\core.py", line 165, in add_outgrads
+    return sparse_add(vs, prev_g, g), True
+  File "C:\Users\Novin Soft\AppData\Local\Programs\Python\Python39\lib\site-packages\autograd\tracer.py", line 48, in f_wrapped
+    return f_raw(*args, **kwargs)
+  File "C:\Users\Novin Soft\AppData\Local\Programs\Python\Python39\lib\site-packages\autograd\core.py", line 186, in sparse_add
+    return x_new.mut_add(x_prev)
+  File "C:\Users\Novin Soft\AppData\Local\Programs\Python\Python39\lib\site-packages\autograd\numpy\numpy_vjps.py", line 698, in mut_add
+    onp.add.at(A, idx, x)
+KeyboardInterrupt

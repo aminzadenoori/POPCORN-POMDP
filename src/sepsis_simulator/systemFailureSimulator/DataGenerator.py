@@ -3,10 +3,14 @@ from .MDP import MDP
 from .State import State
 from .Action import Action
 
-NUM_OBS = 5 #total dim of obs space: hr, sbp, O2, gluc, diabetes
 
+# Total dim of obs space: cpu_usage, gpu_usage, memory_usage, network_usage, busy_server
+NUM_OBS = 5 
 import scipy.stats as stat
+# Why to use softmax?
+# To have stochastic actions.
 from scipy.special import logsumexp
+
 
 
 def update_belief(belief,obs,action,log_T,O,obs_mask=None): 
@@ -52,7 +56,7 @@ class DataGenerator(object):
 
     def simulate_PBVI_policy(self, num_iters, max_num_steps,
             policy, POMDP_params, PBVI_temp = None, 
-            policy_idx_type='full', p_diabetes=0.2,
+            policy_idx_type='full', p_busy_server=0.2,
             output_state_idx_type='full', obs_sigmas=0.3, 
             meas_probs=1.0):
         '''
@@ -75,30 +79,31 @@ class DataGenerator(object):
 
         mdp = MDP(init_state_idx=None, # Random initial state
                   policy_array=None, policy_idx_type=policy_idx_type,
-                  p_diabetes=p_diabetes)
+                  p_busy_server=p_busy_server)
 
         for itr in range(num_iters):
 
             # MDP will generate the diabetes index as well
             mdp.state = mdp.get_new_state()
-            this_diabetic_idx = mdp.state.diabetic_idx
+            this_busy_server_idx = mdp.state.busy_server_idx
 
             belief = np.copy(pi) #initial belief is prior over states...
 
             # add some obs noise to true states, then cache...
             this_state_vec = mdp.state.get_state_vector()[:4] #drop treatments, keep 4 vitals
-            this_state_vec = np.concatenate([this_state_vec,[this_diabetic_idx]]) #add dm so have all 5 obs...
+            this_state_vec = np.concatenate([this_state_vec,[this_busy_server_idx]]) #add dm so have all 5 obs...
             this_obs = this_state_vec + obs_sigmas*np.random.normal(0,1,NUM_OBS)
-
+	    
+            # Is this the missing data mask?
             obs_mask = np.random.uniform(0,1,NUM_OBS) <= meas_probs
 
-            #update belief before taking first action...
+            # update belief before taking first action...
             init_action = 0
             belief = update_belief(belief,this_obs,init_action,log_T,O,obs_mask)
 
             for step in range(max_num_steps):
 
-                #select action by following PBVI-learned policy
+                # select action by following PBVI-learned policy
                 if PBVI_temp is None: #deterministic policy
                     b_alpha = np.dot(policy_alpha_vecs,belief)
                     alpha = np.argmax(b_alpha)
@@ -116,10 +121,10 @@ class DataGenerator(object):
 
                 # add some obs noise to true states, then cache...
                 this_state_vec = mdp.state.get_state_vector()[:4] #drop treatments, keep 4 vitals
-                this_state_vec = np.concatenate([this_state_vec,[this_diabetic_idx]]) #add dm so have all 5 obs...
+                this_state_vec = np.concatenate([this_state_vec,[this_busy_server_idx]]) #add dm so have all 5 obs...
                 this_obs = this_state_vec + obs_sigmas*np.random.normal(0,1,NUM_OBS)
 
-                #randomly mask out part of observations according to fixed probs
+                # randomly mask out part of observations according to fixed probs
                 obs_mask = np.random.uniform(0,1,NUM_OBS) <= meas_probs
                 belief = update_belief(belief,this_obs,action,log_T,O,obs_mask)
 
@@ -137,7 +142,7 @@ class DataGenerator(object):
 
 
     def simulate(self, num_iters, max_num_steps,
-            policy=None, policy_idx_type='full', p_diabetes=0.2,
+            policy=None, policy_idx_type='full', p_busy_server=0.2,
             output_state_idx_type='full',obs_sigmas=0.3,
             meas_probs=1.0):
         '''
@@ -162,7 +167,7 @@ class DataGenerator(object):
         iter_initobs_mask = np.zeros((num_iters, NUM_OBS), dtype=int)
         iter_obs_mask = np.zeros((num_iters, max_num_steps, NUM_OBS), dtype=int)
 
-        #cache probability of each beh action
+        #cache probability of each 'beh' action
         iter_beh_probs = np.ones((num_iters, max_num_steps), dtype=float)*(-1) 
 
         # Record diabetes, the hidden mixture component
@@ -170,21 +175,21 @@ class DataGenerator(object):
 
         mdp = MDP(init_state_idx=None, # Random initial state
                   policy_array=policy, policy_idx_type=policy_idx_type,
-                  p_diabetes=p_diabetes)
+                  p_busy_server=p_busy_server)
 
 
         for itr in range(num_iters):
 
             # MDP will generate the diabetes index as well
             mdp.state = mdp.get_new_state()
-            this_diabetic_idx = mdp.state.diabetic_idx
-            iter_component[itr, :] = this_diabetic_idx  # Never changes
+            this_busy_server_idx = mdp.state.busy_server_idx
+            iter_component[itr, :] = this_busy_server_idx  # Never changes
             iter_states[itr, 0] = mdp.state.get_state_idx(
                     idx_type=output_state_idx_type)
 
             # add some obs noise to true states, then cache...
             this_state_vec = mdp.state.get_state_vector()[:4] #drop treatments, keep 4 vitals
-            this_state_vec = np.concatenate([this_state_vec,[this_diabetic_idx]]) #add dm so have all 5 obs...
+            this_state_vec = np.concatenate([this_state_vec,[this_busy_server_idx]]) #add dm so have all 5 obs...
             this_obs = this_state_vec + obs_sigmas*np.random.normal(0,1,NUM_OBS)
             iter_initobs[itr, :] = this_obs
 
@@ -212,9 +217,9 @@ class DataGenerator(object):
 
                 # add some obs noise to true states, then cache...
                 this_state_vec = mdp.state.get_state_vector()[:4] #drop treatments, keep 4 vitals
-                this_state_vec = np.concatenate([this_state_vec,[this_diabetic_idx]]) #add dm so have all 5 obs...
+                this_state_vec = np.concatenate([this_state_vec,[this_busy_server_idx]]) #add dm so have all 5 obs...
 
-		        # just to add noise the state of the system
+                # just to add noise the state of the system
                 this_obs = this_state_vec + obs_sigmas*np.random.normal(0,1,NUM_OBS)
 
                 iter_obs[itr, step, :] = this_obs
@@ -224,7 +229,7 @@ class DataGenerator(object):
                     iter_rewards[itr, step] = step_reward
                     iter_lengths[itr] = step+1
                     break
-
+	    
             if step == max_num_steps-1:
                 iter_lengths[itr] = max_num_steps
 

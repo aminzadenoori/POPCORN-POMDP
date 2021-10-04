@@ -1,0 +1,2 @@
+C:\Users\Novin Soft\AppData\Local\Programs\Python\Python39\lib\site-packages\autograd\tracer.py:48: RuntimeWarning: invalid value encountered in log
+  return f_raw(*args, **kwargs)

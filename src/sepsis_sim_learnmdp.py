@@ -12,9 +12,9 @@ Lots of code here is directly copied from the original gumbel-max-scm repo.
 
 import itertools as it
 import numpy as np
-from sepsisSimDiabetes.State import State
-from sepsisSimDiabetes.Action import Action
-from sepsisSimDiabetes.MDP import MDP
+from sepsis_simulator.sepsisSimDiabetes.State import State
+from sepsis_simulator.sepsisSimDiabetes.Action import Action
+from sepsis_simulator.sepsisSimDiabetes.MDP import MDP
 import pickle 
 
 from time import time
@@ -23,6 +23,7 @@ np.random.seed(1)
 n_iter = 10000
 n_actions = Action.NUM_ACTIONS_TOTAL
 n_states = State.NUM_OBS_STATES
+# what is this number of components
 n_components = 2
 
 states = range(n_states)
@@ -52,6 +53,7 @@ for (c, s0, a, _) in it.product(components, states, actions, range(n_iter)):
 
 
 est_tx_mat = tx_mat / n_iter
+
 # Extra normalization
 est_tx_mat /= est_tx_mat.sum(axis=-1, keepdims=True)
 
@@ -89,7 +91,7 @@ mat_dict = {"tx_mat": est_tx_mat,
             "r_mat": est_r_mat,
             "p_initial_state": prior_initial_state,
             "p_mixture": prior_mx_components}
-with open('../data/sepsisSimData/diab_txr_mats-replication.p', 'wb') as f:
+with open('data/sepsisSimData/diab_txr_mats-replication.p', 'wb') as f:
     pickle.dump(mat_dict, f)
 
 

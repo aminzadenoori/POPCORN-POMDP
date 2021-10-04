@@ -36,7 +36,7 @@ def get_optimal_and_soft_policy(PHYS_EPSILON,DISCOUNT):
 	n_components = 2
 
 	# Get the transition and reward matrix from file
-	with open("../data/sepsisSimData/diab_txr_mats-replication.p", "rb") as f:
+	with open("data/sepsisSimData/diab_txr_mats-replication.p", "rb") as f:
 	    mdict = pickle.load(f)
 
 	tx_mat = mdict["tx_mat"]
@@ -67,7 +67,7 @@ PROB_DIAB = 0.2 #what proportion to have diabetes; for our purposes treat as an 
 fullPol, physPolSoft = get_optimal_and_soft_policy(PHYS_EPSILON,DISCOUNT)
 
 pickle.dump({'optimal_policy':fullPol, 'eps_greedy_policy_0.14':physPolSoft},
-	open("../data/sepsisSimData/sepsis_simulator_policies.p", "wb"))
+	open("data/sepsisSimData/sepsis_simulator_policies.p", "wb"))
 	
 
 

@@ -14,7 +14,7 @@ import importlib
 import autograd
 import autograd.numpy as np
 import autograd.scipy.stats as stat
-from autograd.scipy.misc import logsumexp
+from autograd.scipy.special import logsumexp
 # import matplotlib.pyplot as plt
 
 from util import draw_discrete_gumbeltrick,draw_discrete
